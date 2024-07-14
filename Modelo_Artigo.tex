@@ -1,0 +1,214 @@
+\documentclass[conference]{ModeloA}
+\usepackage[portuguese]{babel}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage[all]{hypcap}
+\hypersetup{    
+	colorlinks=true,    
+	linkcolor=blue,    
+	urlcolor=blue,  
+	citecolor=red,  
+	linktoc=all}
+
+\begin{document}
+
+\title{Título}
+
+\author{
+	\IEEEauthorblockN{Autor 1}
+	\IEEEauthorblockA{\textit{ECT - UFRN} \\
+		Cidade, estado, País \\
+		email }
+\and
+	\IEEEauthorblockN{Autor 2}
+	\IEEEauthorblockA{\textit{ECT - UFRN} \\
+		Cidade, estado, País \\
+		email }
+}
+
+
+\maketitle
+%-------------------------------------------------------------------------
+% RESUMO
+\begin{abstract}
+
+Este documento traz recomendações para a escrita de trabalho no formato de artigo científico na linguagem \LaTeX. O documento define formas e itens necessários ao trabalho. 
+
+No resumo e no título do artigo não é indicado o uso de símbolos, caracteres especiais, notas de rodapé ou equações matemáticas.
+
+\end{abstract}
+
+%-------------------------------------------------------------------------
+% Palavras chave
+\begin{IEEEkeywords}
+formatação, estilo, modelo, artigo científico
+\end{IEEEkeywords}
+
+%-------------------------------------------------------------------------
+% Introdução
+
+\section{Introdução}
+Este documento é um modelo com as instruções para a construção da atividade 2 do componente curricular ``Introdução às Ciências e Tecnologia'' no semestre letivo 2024.1, sob a coordenação da professora Jossana Ferreira. 
+
+O trabalho deve ser fruto de uma pesquisa científica e não uma cópia de fontes de pesquisa, os autores devem escrever com suas próprias palavras, de forma clara e objetiva.
+
+%-------------------------------------------------------------------------
+% Exigências
+
+\section{Exigências do trabalho}
+
+Nesta seção serão mostrados os itens obrigatórios e a forma como devem ser apresentados.
+
+\subsection{Número de participantes}
+ O trabalho será desenvolvido em duplas ou individualmente, e as duplas devem ser indicadas na planilha do endereço:\\ 
+  \href{https://docs.google.com/spreadsheets/d/1l2WnmjrgzaTikbDhNdt9FAAWOUk1IO63smh_fKgjOUs/edit?usp=sharing}{LINK DAS DUPLAS}\\ 
+ para que possam ser cadastradas no SIGAA.
+
+\subsection{Tema do trabalho}
+
+O tema do trabalho deve ser definido pela dupla. Devem escolher um produto, uma tecnologia ou um processo e explicar sua origem, evolução, situação atual e perspectiva de desenvolvimento para o futuro. Como exemplo, pode ser citado o telefone celular, o processo de filtragem para obtenção de água própria para consumo, os satélites espaciais, os CubeSats, os microchips, a nanotecnologia, a mecânica quântica, os motores elétricos, as viagens espaciais, a previsão de chuvas, etc.
+
+\subsection{Entrega do trabalho}
+
+O trabalho deve ser entregue no formato PDF, através da plataforma SIGAA, por um dos membros da dupla até a segunda feira dia 15 de julho de 2024.
+
+%-------------------------------------------------------------------------
+% Essenciais
+	
+\section{Seções essenciais}
+
+O trabalho deve ter duas páginas (nem mais nem menos), em \LaTeX, no formato especificado no modelo.
+Para o desenvolvimento do trabalho é necessário que hajam no mínimo as seções:\\
+
+\begin{itemize}
+	\item {\bf Resumo:} Apresentar um resumo objetivo do que será mostrado no trabalho.
+	\item {\bf Introdução: }
+			Contextualização, explicação do problema, importância do tema.
+	\item {\bf Histórico:} 
+			Resgate do nascimento e história do produto desde o seu início, com datas e motivação para sua criação.
+	\item {\bf Seções de desenvolvimento:}
+			Incluir quantas seções forem necessárias para explicar o seu tema.
+	\item {\bf Conclusão:} 
+			Incluir um resumo com o fechamento das ideias incluindo os principais pontos mostrados.
+	\item {\bf Referências bibliográficas:}
+			Incluir todas as fontes pesquisadas, sejam livros, sites, canais, apostilas, notas de aula, etc.
+\end{itemize}
+
+%-------------------------------------------------------------------------
+% Textual
+
+\section{Exigências textuais}
+
+O trabalho deve ser desenvolvido em folha A4, fonte Times New Roman de tamanho 12pt e em duas colunas. As margens já são definidas na formatação do modelo.
+
+Quando utilizar abreviações e acrônimos, defina o seu significado logo na sua primeira aparição no texto. Tente não utilizar essas simplificações no título ou resumo.
+
+Se for necessário usar unidades, opte sempre pelo sistema internacional de unidades, não utilize padrões distintos, por extenso e depois abreviado, escolha uma forma e a mantenha em todas as utilizações (exemplo ``$Wb/m^2$'' ou ``webers por metro quadrado").
+
+Use ``0'' antes do número decimal: exemplo 0,35.
+
+Para citar uma referência basta fazer menção ao código usado na referência que a ordem será automaticamente definida, como por exemplo as referências bibliográficas \cite{Diniz},  \cite{Bazzo} e \cite{Faria} ou as referências digitais \cite{overleafFig} e \cite{overleafTab}.
+
+%-------------------------------------------------------------------------
+% Ferramentas
+
+\section{Ferramentas para o artigo}
+
+Nesta seção serão mostradas algumas ferramentas que podem ou não ser usadas no trabalho, são totalmente opcionais, mas podem ajudar a explicar melhor as ideias. No caso de utilização, todas as figuras, tabelas e equações devem ser mencionadas (citadas) no texto antes da sua aparição.
+
+\subsection{Figura}
+Para inserir uma figura basta localizar no texto na posição desejada e citá-la usando uma referência definida, dessa forma, ao adicionar outra figura, a numeração se adequa automaticamente, como por exemplo, a Figura \ref{ect}.
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=4cm]{ECT.png}}
+	\caption{Examplo de Figura.}
+	\label{ect}
+\end{figure}
+
+\subsection{Tabela}
+
+As tabelas seguem a mesma flutuação das figuras, dois exemplos são mostrados nas Tabelas \ref{tab1} e \ref{tab2}.
+
+\begin{table}[htbp]
+	\caption{Exemplo de Tabela 1}
+	\begin{center}
+		\begin{tabular}{|l|c|c|}
+			\hline
+			\textbf{Praia} & \textbf{Estado} & \textbf{Cidade} \\ \hline
+			Pipa & RN & Goianinha \\
+			Porto de Galinhas & PE & Ipojuca\\
+			Iracema & CE & Fortaleza\\
+			\hline 
+		\end{tabular}
+		\label{tab1}
+	\end{center}
+\end{table}
+
+
+\begin{table}[h]
+	\caption{Exemplo de Tabela 2}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\textbf{Brasil}&\multicolumn{3}{|c|}{\textbf{Frutas}} \\
+			\cline{2-4} 
+			\textbf{Região} & \textbf{\textit{Amarelas}}& \textbf{\textit{Verdes}}& \textbf{\textit{Vermelhas}} \\
+			\hline
+			Nordeste & Laranja$^{\mathrm{a}}$& Limão & Acerola  \\
+			Sul & Pequi & Lichia & Morango \\ 
+			\hline
+			\multicolumn{4}{l}{$^{\mathrm{a}}$Exemplo de nota de rodapé.}
+		\end{tabular}
+		\label{tab2}
+	\end{center}
+\end{table}
+
+\subsection{Equação}
+
+Para o caso de uma única equação, tem-se o exemplo da Equação \ref{delta}:
+
+\begin{equation}
+	\Delta^2 = a^2 + b^2 \label{delta}
+\end{equation}
+
+No caso de várias equações consecutivas, tem-se as Equações \ref{eqGama} e \ref{eqOmega}:
+
+\begin{eqnarray}
+	a+b=\gamma \label{eqGama}\\
+	\omega = \frac{b}{a} \label{eqOmega}
+\end{eqnarray}
+
+
+%-------------------------------------------------------------------------
+% Conclusão
+
+\section{Conclusão}
+
+Na conclusão deve ser mostrado o que se pôde concluir a partir dos fatos estudados, um breve resumo dos resultados e um fechamento das ideias devem ser apresentados de forma clara e objetiva.
+
+Lembre que o trabalho não deve apresentar plágio (além de antiético, é crime). 
+
+
+\begin{thebibliography}{00}
+	
+\bibitem{Diniz} H. C. Pereira-Diniz, ``Ciência e tecnologia: origem, evolução e perspectiva'', Belo Horizonte: BDMG, 2011.
+
+\bibitem{Bazzo} W.A. Bazzo,``Introdução à engenharia: conceitos, ferramentas e comportamentos'', $1^a$ Ed., Florianópolis: Ed. da UFSC, 2007.
+
+\bibitem{Faria} R. M. Faria (coordenador),  ``Ciência, tecnologia e inovação para um Brasil competitivo'', $1^a$ ed - São Paulo: SBPC, 2011.
+
+\bibitem{overleafFig} Site Overleaf - Inserindo imagens. {\it Disponível em \href{https://pt.overleaf.com/learn/latex/Inserting_Images}{Inserindo imagens - Overleaf}}
+
+\bibitem{overleafTab} Site Overleaf - Tabelas. {\it Disponível em \href{https://pt.overleaf.com/learn/latex/Tables}{Tabelas - Overleaf}}
+
+\end{thebibliography}
+
+
+\end{document}
